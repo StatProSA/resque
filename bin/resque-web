@@ -8,6 +8,7 @@ rescue LoadError
   require 'vegas'
 end  
 require 'resque/server'
+require 'resque_cleaner'
 
 
 Vegas::Runner.new(Resque::Server, 'resque-web', {
